@@ -57,7 +57,7 @@ header {
 
 @media (min-width: 768px) {
   .container {
-    padding: 5px 10rem;
+    padding: 5px 5rem;
   }
 
   .ham-menu {
@@ -69,5 +69,12 @@ header {
     position: static;
     box-shadow: none;
     gap: 3rem;
+    border-radius: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    padding: 5px 10rem;
   }
 }
