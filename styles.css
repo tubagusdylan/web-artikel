@@ -14,6 +14,10 @@
 header {
   box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.1);
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
 }
 
 .nav-container {
@@ -53,6 +57,67 @@ header {
 
 .nav-link a:hover {
   color: blue;
+}
+
+.main-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin-top: 4rem;
+}
+
+.content {
+  width: 100%;
+  height: 200vh;
+}
+
+.author {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: start;
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 3px solid whitesmoke;
+}
+
+aside h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+aside h4 {
+  font-weight: 600;
+  font-size: 18px;
+  color: blue;
+  margin-bottom: 16px;
+}
+
+.author-photo {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.author-contact {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.author-contact li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+  flex-wrap: wrap;
+}
+
+.author-contact li a span {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  display: none;
 }
 
 @media (min-width: 768px) {
