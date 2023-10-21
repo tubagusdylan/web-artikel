@@ -68,26 +68,26 @@ header {
 
 .content {
   width: 100%;
-  height: 200vh;
 }
 
 .author {
   width: 100%;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   align-items: start;
   gap: 20px;
   padding: 20px 0;
   border-bottom: 3px solid whitesmoke;
 }
 
-aside h3 {
+.author-content-2 h3 {
   font-size: 22px;
   font-weight: 600;
   margin: 5px 0;
 }
 
-aside h4 {
+.author-content-2 h4 {
   font-weight: 600;
   font-size: 18px;
   color: blue;
@@ -141,5 +141,36 @@ aside h4 {
 @media (min-width: 1200px) {
   .container {
     padding: 5px 10rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .content {
+    width: 70%;
+    border-right: 3px solid whitesmoke;
+  }
+
+  .author {
+    width: 30%;
+    gap: 8px;
+    border-bottom: none;
+  }
+
+  .author-content-1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .author-content-1 img {
+    width: 150px;
+  }
+
+  .author-content-2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .author-contact {
+    justify-content: center;
   }
 }
