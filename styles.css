@@ -63,11 +63,40 @@ header {
   width: 100%;
   display: flex;
   flex-wrap: wrap-reverse;
-  margin-top: 4rem;
+  align-items: start;
+  margin: 4rem 0;
 }
 
 .content {
   width: 100%;
+  margin-top: 2rem;
+}
+
+.content article {
+  margin: 0 auto;
+}
+
+.content article h1 {
+  margin-bottom: 1rem;
+  font-size: 22px;
+}
+
+.content article p {
+  font-size: 16px;
+  line-height: 1.4rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.img-article {
+  width: 25rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  transition: scale 300ms ease-in-out;
+}
+
+.img-article:hover {
+  scale: 0.9;
 }
 
 .author {
@@ -148,6 +177,19 @@ header {
   .content {
     width: 70%;
     border-right: 3px solid whitesmoke;
+    padding-right: 1.5rem;
+  }
+
+  .content article {
+    text-align: center;
+  }
+
+  .content article h1 {
+    text-align: left;
+  }
+
+  .img-article {
+    width: 45rem;
   }
 
   .author {
