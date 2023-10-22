@@ -254,9 +254,50 @@ header {
   color: white;
 }
 
+footer {
+  background-color: salmon;
+  padding: 2rem 20px !important;
+  color: white;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.col {
+  width: 50%;
+}
+
+.row-2 {
+  text-align: center;
+}
+
+.col h3,
+.col h4 {
+  margin-bottom: 10px;
+}
+
+.col ul {
+  list-style: none;
+}
+
+.col ul li {
+  margin-bottom: 10px;
+}
+
+.col ul li a {
+  text-decoration: none;
+  color: white;
+}
+
 @media (min-width: 768px) {
   .container {
     padding: 5px 5rem;
+  }
+
+  footer {
+    padding: 2rem 5rem !important;
   }
 
   .ham-menu {
@@ -333,5 +374,9 @@ header {
 
   .article-card {
     width: calc(100% / 6 - 10px);
+  }
+
+  footer {
+    padding: 2rem 10rem !important;
   }
 }
