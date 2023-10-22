@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -64,12 +65,13 @@ header {
   display: flex;
   flex-wrap: wrap-reverse;
   align-items: start;
-  margin: 4rem 0;
+  margin-top: 4rem;
 }
 
 .content {
   width: 100%;
   margin-top: 2rem;
+  border-bottom: 3px solid whitesmoke;
 }
 
 .content article {
@@ -89,7 +91,7 @@ header {
 }
 
 .img-article {
-  width: 25rem;
+  width: 80%;
   border-radius: 10px;
   margin-bottom: 1rem;
   transition: scale 300ms ease-in-out;
@@ -142,11 +144,114 @@ header {
   flex-wrap: wrap;
 }
 
-.author-contact li a span {
+#articles h3 {
+  color: salmon;
+  margin-bottom: 1rem;
+}
+
+#articles {
+  margin-bottom: 1rem;
+}
+
+.others-article {
+  width: 100%;
+  padding: 5px 0;
+  overflow-x: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.article-card {
+  width: calc(50% - 10px);
+  overflow: hidden;
+}
+
+.article-card img {
+  width: 100%;
+  margin-bottom: 7px;
+  background-size: cover;
+  transition: all 0.3s ease-in-out;
+}
+
+.article-card img:hover {
+  scale: 0.9;
+}
+
+.article-card a {
   text-decoration: none;
   color: black;
+}
+
+.article-card a h4 {
   font-size: 14px;
-  display: none;
+  max-width: 20ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#contact h3 {
+  color: salmon;
+  margin-bottom: 1rem;
+}
+
+#contact {
+  margin-bottom: 1rem;
+}
+
+.contact-card {
+  width: 100%;
+  padding: 15px 20px;
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+
+.contact-card label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.contact-card input {
+  display: block;
+  margin-top: 5px;
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+}
+
+.contact-card input:focus {
+  outline: 1px solid salmon;
+}
+
+.contact-card textarea {
+  display: block;
+  margin-top: 5px;
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-card textarea:focus {
+  outline: 1px solid salmon;
+}
+
+.contact-card button {
+  width: 100%;
+  background-color: white;
+  padding: 8px;
+  border: 1px solid salmon;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.contact-card button:hover {
+  background-color: salmon;
+  color: white;
 }
 
 @media (min-width: 768px) {
@@ -165,18 +270,10 @@ header {
     gap: 3rem;
     border-radius: 0;
   }
-}
 
-@media (min-width: 1200px) {
-  .container {
-    padding: 5px 10rem;
-  }
-}
-
-@media (min-width: 768px) {
   .content {
     width: 70%;
-    border-right: 3px solid whitesmoke;
+    border-bottom: 3px solid whitesmoke;
     padding-right: 1.5rem;
   }
 
@@ -189,7 +286,7 @@ header {
   }
 
   .img-article {
-    width: 45rem;
+    width: 80%;
   }
 
   .author {
@@ -214,5 +311,27 @@ header {
 
   .author-contact {
     justify-content: center;
+  }
+
+  .article-card {
+    width: calc(25% - 10px);
+  }
+
+  #articles {
+    width: 70%;
+  }
+
+  .contact-card {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    padding: 5px 10rem;
+  }
+
+  .article-card {
+    width: calc(100% / 6 - 10px);
   }
 }

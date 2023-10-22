@@ -16,10 +16,10 @@
         </div>
         <ul class="nav-link" hidden="true">
           <li>
-            <a href="#content">Home</a>
+            <a href="#main">Home</a>
           </li>
           <li>
-            <a href="#article">Articles</a>
+            <a href="#articles">Articles</a>
           </li>
           <li>
             <a href="#contact">Contact</a>
@@ -27,7 +27,7 @@
         </ul>
       </nav>
     </header>
-    <main class="container main-container">
+    <main class="container main-container" id="main">
       <div class="content">
         <article>
           <h1>Pengenalan Arduino</h1>
@@ -59,32 +59,98 @@
             <li>
               <a href="#" target="_blank">
                 <img src="assets/icon/email-50.png" alt="email" width="23px" />
-                <span>tubagus.dylanr@gmail.com</span>
               </a>
             </li>
             <li>
               <a href="#" target="_blank">
                 <img src="assets/icon/place.png" alt="email" width="23px" />
-                <span>Bekasi, West Java</span>
               </a>
             </li>
             <li>
               <a href="#" target="_blank">
                 <img src="assets/icon/linkedin.svg" alt="email" width="23px" />
-                <span>in/tubagusdylan</span>
               </a>
             </li>
             <li>
               <a href="#" target="_blank">
                 <img src="assets/icon/github.svg" alt="email" width="23px" />
-                <span>tubagus dylan</span>
               </a>
             </li>
           </ul>
         </aside>
       </div>
     </main>
-    <section class="others-article"></section>
+    <section class="container" id="articles">
+      <h3>Rekomendasi Untuk Anda</h3>
+      <div class="others-article">
+        <div class="article-card">
+          <a href="#">
+            <img src="https://source.unsplash.com/640x480?technology" alt="photo-1" />
+            <h4>Serba-serbi teknologi</h4>
+          </a>
+        </div>
+        <div class="article-card">
+          <a href="#">
+            <img src="https://source.unsplash.com/640x480?arduino" alt="photo-1" />
+            <h4>Macam-macam Arduino</h4>
+          </a>
+        </div>
+        <div class="article-card">
+          <a href="#">
+            <img src="https://source.unsplash.com/640x480?esp32" alt="photo-1" />
+            <h4>Belajar ESP32 dari nol</h4>
+          </a>
+        </div>
+        <div class="article-card">
+          <a href="#">
+            <img src="https://source.unsplash.com/640x480?electrical" alt="photo-1" />
+            <h4>7 alasan kenapa harus masuk teknik elektro</h4>
+          </a>
+        </div>
+        <div class="article-card">
+          <a href="#">
+            <img src="https://source.unsplash.com/640x480?javascript" alt="photo-1" />
+            <h4>Belajar pemrograman JavaScript dari 0</h4>
+          </a>
+        </div>
+        <div class="article-card">
+          <a href="#">
+            <img src="https://source.unsplash.com/640x480?machinelearning" alt="photo-1" />
+            <h4>Inilah kenapa AI akan menguasai dunia</h4>
+          </a>
+        </div>
+        <div class="article-card">
+          <a href="#">
+            <img src="https://source.unsplash.com/640x480?youtube" alt="photo-1" />
+            <h4>Cara jadi terkenal di youtube</h4>
+          </a>
+        </div>
+        <div class="article-card">
+          <a href="#">
+            <img src="https://source.unsplash.com/640x480?tiktok" alt="photo-1" />
+            <h4>3 Cara FYP di Tiktok</h4>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="container" id="contact">
+      <h3>Hubungi Kami</h3>
+      <form class="contact-card">
+        <label for="name">
+          Nama
+          <input type="text" id="name" />
+        </label>
+        <label for="email">
+          Email
+          <input type="email" id="email" />
+        </label>
+        <label for="message">
+          Pesan
+          <textarea id="message" rows="10"></textarea>
+        </label>
+        <button>Kirim</button>
+      </form>
+    </section>
     <footer class="container"></footer>
 
     <script src="app.js"></script>
